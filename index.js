@@ -4,7 +4,7 @@ let max = 2;
 let stage = 1;
 let points = 0;
 const guessNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-const range = Number(prompt(`Hi ${username}! Enter your guess`));
+const range = Number(prompt(`Hi ${username}! Enter a number`));
 
 // Check if guess number is correct or not
 function guess(range, guessNumber) {
@@ -40,7 +40,7 @@ function nextStage() {
 
     // Prompt user to enter new number
     console.log(`Stage ${stage}! Range has been increased from ${min} - ${max}`);
-    let range = Number(prompt(`${username} Enter your guess`));
+    let range = Number(prompt(`${username} Enter a number`));
 
     // call guess function to check new guess
     guess(range, guessNumber);
