@@ -1,5 +1,5 @@
-const username = prompt("Please input your username");
-let min = 1;
+const username = prompt("Please enter your username");
+const min = 1;
 let max = 2;
 let stage = 1;
 let points = 0;
